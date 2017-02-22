@@ -22,7 +22,7 @@ public class Point {
 	}
 	
 	public double getDistance(Point a){
-		double distance = 0;
+		double distance = Math.sqrt(((a.getX() - x)*(a.getX() - x)) + (a.getY() - y)*(a.getY() - y));
 		return distance;
 	}
 	
